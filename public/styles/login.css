@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+span {
+    color: red;
+}
+
+form {
+    background-color: hsl(0, 0%, 75%, .9);
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+form input {
+    height: 40px;
+    padding: 0 .7rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+form label {
+    margin-bottom: .7rem;
+    font-size: 1.5rem;
+}
+
+.submit {
+    background-color: rgb(0, 0, 0, .9);
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about, .member, .gallery, .contact {
+    height: 200px;
+    width: 300px;
+    background-color: hsl(0, 0%, 75%, .9);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.desc {
+    padding: 0 4rem;
+}
+
+.desc h3 {
+    font-size: 1.7rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: .5rem;
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media (max-width: 700px){
+    .about, .member, .gallery, .contact {
+        height: 100px;
+        width: 150px;
+        background-color: hsl(0, 0%, 75%, .9);
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 20rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+    form input {
+        height: 30px;
+    }
+    form label {
+        font-size: 1.2rem;
+    }
+
+    .desc h3 {
+        font-size: 1.2rem;
+    }
+}

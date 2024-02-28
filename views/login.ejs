@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs")  %>
+
+<h1>Welcome to <span>Nganggur.</span></h1>
+
+<form action="/dashboard" method="post">
+    <label for="username">Username</label>
+    <input type="text" name="username" placeholder="Masukan username">
+    <label for="password">Password</label>
+    <input type="password" name="password" placeholder="Masukan password">
+    <input class="submit" type="submit" value="Login">
+</form>
+
+<%- include("partials/footer.ejs")  %>
